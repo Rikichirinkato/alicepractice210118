@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+header{
+    background-image: url(../img/header-bg.jpg);
+    background-size: cover;
+}
 #menu{
     display: none;
 }
@@ -11,32 +15,40 @@
 .skillsNtools section{
     width: 175px;
     height: 175px;
+    background-size: cover;
 }
 .information img{
     width: 200px;
     border-radius: 50%;
 }
 .html{
-    background-image: url(img/html.png)
+    background-image: url(../img/html.png)
 }
 .css{
-    background-image: url(img/css.png)
+    background-image: url(../img/css.png)
 }
 .js{
-    background-image: url(img/js.png)
+    background-image: url(../img/js.png)
 }
 .es{
-    background-image: url(img/es6.png)
+    background-image: url(../img/es6.png)
 }
 .bt{
-    background-image: url(img/bootstrap.png)
+    background-image: url(../img/bootstrap.png)
 }
 .ph{
-    background-image: url(img/ph.png)
+    background-image: url(../img/ph.png)
 }
 .git{
-    background-image: url(img/git.png)
+    background-image: url(../img/git.png)
 }
 .jq{
-    background-image: url(img/jquery.png)
+    background-image: url(../img/jquery.png)
+}
+.contacts{
+    display: flex;
+    flex-direction:column;
+}
+.contact-item img{
+    width: 35px;
 }
