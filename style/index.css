@@ -2,12 +2,3 @@
     margin: 0;
     padding: 0;
 }
-h1 {
-    color: red;
-}
-h2{
-    color: green;
-}
-section:last-child{
-    color: lime;
-}
