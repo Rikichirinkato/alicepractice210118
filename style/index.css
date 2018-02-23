@@ -8,3 +8,31 @@
 #menu:checked~.navigation{
     display: flex;
 }
+.skill-item{
+    width: 175px;
+    height: 175px;
+}
+.html{
+    background-image: url(img/html.png)
+}
+.css{
+    background-image: url(img/css.png)
+}
+.js{
+    background-image: url(img/js.png)
+}
+.es{
+    background-image: url(img/es6.png)
+}
+.bt{
+    background-image: url(img/bootstrap.png)
+}
+.ph{
+    background-image: url(img/ph.png)
+}
+.git{
+    background-image: url(img/git.png)
+}
+.jq{
+    background-image: url(img/jquery.png)
+}
