@@ -2,3 +2,9 @@
     margin: 0;
     padding: 0;
 }
+#menu{
+    display: none;
+}
+#menu:checked~.navigation{
+    display: flex;
+}
