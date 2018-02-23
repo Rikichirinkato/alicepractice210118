@@ -8,9 +8,13 @@
 #menu:checked~.navigation{
     display: flex;
 }
-.skill-item{
+.skillsNtools section{
     width: 175px;
     height: 175px;
+}
+.information img{
+    width: 200px;
+    border-radius: 50%;
 }
 .html{
     background-image: url(img/html.png)
