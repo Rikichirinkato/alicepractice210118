@@ -1,10 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+a, a:hover, a:visited{
+    color: #fff;
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+h2{
+    text-align: center;
 }
 header{
+    width: 100%;
+    height: 200px;
     background-image: url(../img/header-bg.jpg);
     background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    width: 90%;
+    height: 45px;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    background-color: rgba(43,43,43,.7);
+    z-index: 10;
+}
+.menu-btn{
+    width: 35px;
+    height: 35px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.burger{
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+.navigation{
+    display: none;
+    flex-direction: column;
+    top: 45px;
+    position: absolute;
+    background-color: rgba(43,43,43,.7);
+}
+.navigation li{
+    padding: 10px 20px 10px 5px;
+}
+.navigation a:hover{
+    color: grey;
+}
+.greeting{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: #fff;
 }
 #menu{
     display: none;
@@ -12,14 +77,43 @@ header{
 #menu:checked~.navigation{
     display: flex;
 }
-.skillsNtools section{
+main{
+    width: 90%;
+    padding: 30px 5%;
+}
+.skillsNtools>div{
     width: 175px;
     height: 175px;
-    background-size: cover;
+    background-size: contain;
+    position: relative;
+}
+.skill-item{
+    width: 100%;
+    height: 0;
+    font-size: 20px;
+    background-color: rgba(43,43,43,.7);
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+.skillsNtools>div:hover>.skill-item{
+    height: 20px;
+    padding: 25px 0;
+    transition-duration: 2s;
+}
+.information{
+    width: 100%;
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 .information img{
     width: 200px;
     border-radius: 50%;
+}
+.education{
+    width: 100%;
+    padding: 50px 0;
 }
 .html{
     background-image: url(../img/html.png)
@@ -46,9 +140,78 @@ header{
     background-image: url(../img/jquery.png)
 }
 .contacts{
+    width: 100%;
     display: flex;
     flex-direction:column;
 }
+.contacts h2{
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    z-index: 10;
+    padding-top: 50px;
+}
 .contact-item img{
     width: 35px;
+}
+.contacts a{
+    color: black;
+    padding: 10px 0;
+}
+form{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+form input[type="text"]{
+    width: 100%;
+    height: 30px;
+    padding: 5px 2%;
+    box-sizing: border-box;
+    margin: 10px 0;
+}
+form textarea{
+    width: 100%;
+    height: 80px;
+    padding: 5px 2%;
+    box-sizing: border-box;
+    resize: none;
+    margin: 10px 0;
+}
+form input[type="submit"]{
+    width: 100px;
+    height: 30px;
+    padding: 5px 2%;
+    box-sizing: border-box;
+}
+footer{
+    width: 90%;
+    height: 30px;
+    padding: 5px 5%;
+    background-color: #37393d;
+    color: #fff;
+}
+@media (min-width: 550px){
+    .menu-btn{
+        display: none;
+    }
+    nav{
+        align-items: flex-end;
+    }
+    .navigation{
+        display: flex;
+        flex-direction: row;
+        top: 0;
+        background: none;
+    }
+    form{
+        width: 50%;
+        margin: auto;
+        justify-content: space-between;
+    }
+    form input[type="text"]{
+        width: 48%;
+    }
 }
