@@ -17,32 +17,34 @@
             </label>
             <input type="checkbox" id="menu"/>
             <ul class="navigation">
-                <li><a href="mailto:">Home</a></li>
-                <li><a href="mailto:">About Me</a></li>
-                <li><a href="mailto:">Education</a></li>
-                <li><a href="mailto:">Skills and Tools</a></li>
-                <li><a href="mailto:">Contacts</a></li>
-                <li><a href="mailto:">Write Me</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills and Tools</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+                <li><a href="#write">Write Me</a></li>
             </ul>
         </nav>
-        <section class="greeting">
+        <section class="greeting" id="home">
             <h1>Hi, my name is Roman</h1>
             <p>I am front end developer</p>
         </section>
     </header>
     <main>
-        <article class="information">
+        <article class="information" id="about">
             <img src="img/face.jpg" alt="My photo">
             <p></p>
         </article>
-        <article class="education">
+        <article class="education" id="education">
             <h2>Education</h2>
-            <p>University of Lviv</p>
-            <p>Logos IT Academy</p>
-            <p>Lviv IT School</p>
-            <p>SoftServe IT Academy</p>
+            <ul>
+                <li>Lviv Ivan Franko National University, Master of Geography, 2012 – 2018 </li>
+                <li>Logos IT Academy, JavaScript, 2016</li>
+                <li>Lviv IT School, Web-UI development, 2017</li>
+                <li>SoftServe IT Academy, HTML5/ CSS3/ JavaScript Fundamentals, 2018</li>
+            </ul>
         </article>
-        <article class="skillsNtools">
+        <article class="skillsNtools" id="skills">
             <h2>My skills and tools </h2>
             <div class="html"><div class="skill-item">HTML</div></div>
             <div class="css"><div class="skill-item">CSS</div></div>
@@ -53,26 +55,26 @@
             <div class="git"><div class="skill-item">Git</div></div>
             <div class="jq"><div class="skill-item">Jquery</div></div>
         </article>
-        <article class="contacts">
+        <article class="contacts" id="contacts">
             <h2>My Contact</h2>
             <a href="mailto:roman28krasko@gmail.com" class="contact-item">
                 <img src="img/mail.png" alt="mail logo">
-                roman28krasko@gmail.com
+                <span>My e-mail: roman28krasko@gmail.com</span>
             </a>
             <a href="tel:+380936318557" class="contact-item">
                 <img src="img/phone.png" alt="phone logo">
-                +380936318557
+                <span>My tel. number: +380936318557</span>
             </a>
             <a href="https://github.com/Rikichirinkato" class="contact-item">
                 <img src="img/github-logo.png" alt="github logo">
-                Rikichikinkato
+                <span>My GitHub profile: Rikichikinkato</span>
             </a>
             <a href="https://www.facebook.com/roman.krasko" class="contact-item">
                 <img src="img/phone.png" alt="phone logo">
-                Roman Krasko
+                <span>My Facebook profile: Roman Krasko</span>
             </a>
         </article>
-        <article class="write">
+        <article class="write" id="write">
             <h2>Write Me</h2>
             <form>
                 <input type="text" name="name" placeholder="Enter Your Name">
