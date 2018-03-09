@@ -10,36 +10,32 @@
 <body>
     <header>
         <nav>
-            <label class="menu-btn" for="menu">
-                <div class="burger"></div>
-                <div class="burger"></div>
-                <div class="burger"></div>
-            </label>
-            <input type="checkbox" id="menu"/>
-            <ul class="navigation">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills and Tools</a></li>
-                <li><a href="#contacts">Contacts</a></li>
-                <li><a href="#write">Write Me</a></li>
-            </ul>
+            <div class="nav">
+                <label class="menu-btn" for="menu">
+                    <div class="burger"></div>
+                    <div class="burger"></div>
+                    <div class="burger"></div>
+                </label>
+                <input type="checkbox" id="menu"/>
+                <ul class="navigation">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills and Tools</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                    <li><a href="#write">Write Me</a></li>
+                </ul>
+            </div>
         </nav>
         <section class="greeting" id="home">
-            <h1>Hi, my name is Roman</h1>
-            <p>I am front end developer</p>
+            <h1>Roman Krasko</h1>
+            <p>Front-end developer</p>
         </section>
     </header>
     <main>
         <article class="information" id="about">
             <img src="img/face.jpg" alt="My photo">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Donec blandit sit amet turpis eget laoreet. 
-            Nunc non nibh quis neque fringilla facilisis nec in ligula. 
-            Curabitur vel ante velit. Vestibulum pellentesque risus tortor, 
-            non sodales felis malesuada at. Integer tincidunt justo arcu, 
-            sit amet pretium nunc eleifend nec. 
-            Suspendisse porttitor pellentesque neque.</p>
+            <p>Hi, my name is Roman, and I am front-end developer.   </p>
         </article>
         <article class="education" id="education">
             <h2>Education</h2>
@@ -52,14 +48,20 @@
         </article>
         <article class="skillsNtools" id="skills">
             <h2>My skills and tools </h2>
-            <div class="html"><div class="skill-item">HTML</div></div>
-            <div class="css"><div class="skill-item">CSS</div></div>
-            <div class="js"><div class="skill-item">JavaScript</div></div>
-            <div class="es"><div class="skill-item">EcmaScript16</div></div>
-            <div class="bt"><div class="skill-item">Bootstrap</div></div>
-            <div class="ph"><div class="skill-item">Photoshop</div></div>
-            <div class="git"><div class="skill-item">Git</div></div>
-            <div class="jq"><div class="skill-item">Jquery</div></div>
+            <div class="screen">
+                <div class="slides">
+                    <div class="html"><div class="skill-item">HTML</div></div>
+                    <div class="css"><div class="skill-item">CSS</div></div>
+                    <div class="js"><div class="skill-item">JavaScript</div></div>
+                    <div class="es"><div class="skill-item">EcmaScript16</div></div>
+                    <div class="bt"><div class="skill-item">Bootstrap</div></div>
+                    <div class="ph"><div class="skill-item">Photoshop</div></div>
+                    <div class="git"><div class="skill-item">Git</div></div>
+                    <div class="jq"><div class="skill-item">Jquery</div></div>
+                    <div class="react"><div class="skill-item">React</div></div>
+                    <div class="redux"><div class="skill-item">Redux</div></div>
+                </div>
+            </div>
         </article>
         <article class="contacts" id="contacts">
             <h2>My Contact</h2>
@@ -82,7 +84,7 @@
         </article>
         <article class="write" id="write">
             <h2>Write Me</h2>
-            <form>
+            <form method="POST" action="https://formspree.io/roman28krasko@gmail.com">
                 <input type="text" name="name" placeholder="Enter Your Name">
                 <input type="text" name="email" placeholder="Enter Your E-Mail">
                 <textarea placeholder="Enter Your Message"></textarea>
