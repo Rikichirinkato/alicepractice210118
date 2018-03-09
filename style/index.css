@@ -142,6 +142,7 @@ main {
     width: 100%;
     height: auto;
     text-align: center;
+    font-size: 24px;
 }
 
 .education {
@@ -159,7 +160,7 @@ main {
     align-items: center;
 }
 
-.slides>div {
+.carousel-item>div {
     width: 175px;
     height: 175px;
     background-size: contain;
@@ -168,6 +169,10 @@ main {
     margin: 10px;
 }
 
+.carousel-item.active{
+    display: flex;
+    flex-direction: column;
+}
 .skill-item {
     width: 100%;
     height: 0;
@@ -177,21 +182,14 @@ main {
     text-align: center;
     font-size: 0;
 }
-.screen{
-    width: 780px;
-    height: 180px;
+.carousel{
+    width: inherit;
+    height: auto;
     overflow: hidden;
     margin: auto;
 }
-.slides{
-    width: 1950px;
-    height: 180px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-.slides>div:hover>.skill-item {
+
+.carousel-item>div:hover>.skill-item {
     height: 20px;
     padding: 25px 0;
     transition-duration: 1s;
@@ -339,6 +337,9 @@ footer p{
         width: 50%;
         height: auto;
         text-align: left;
+    }
+    .carousel-item.active{
+        flex-direction: row;
     }
     form {
         width: 50%;
