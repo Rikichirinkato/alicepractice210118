@@ -189,17 +189,10 @@ main {
     font-size: 0;
 }
 .carousel{
-    width: 400px;
+    width: auto;
     height: auto;
     overflow: hidden;
     margin: auto;
-}
-
-.inside>div:hover>.skill-item {
-    height: 20px;
-    padding: 25px 0;
-    transition-duration: 1s;
-    font-size: 20px;
 }
 
 .html {
@@ -310,6 +303,10 @@ footer p{
     margin: auto;
 }
 
+#tnx{
+    opacity: 0;
+}
+
 @media (min-width: 650px) {
     .menu-btn {
         display: none;
@@ -351,6 +348,17 @@ footer p{
     }
     .carousel-item{
         max-width: 750px;
+    }
+    .skill-item{
+        height: 0;
+        padding: 0;
+        font-size: 0;
+    }
+    .inside>div:hover>.skill-item {
+        height: 20px;
+        padding: 25px 0;
+        transition-duration: 1s;
+        font-size: 20px;
     }
     
     .inside{
