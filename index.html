@@ -15,9 +15,9 @@
             <nav>
                 <div class="nav">
                     <label class="menu-btn" for="menu">
-                        <div class="burger"></div>
-                        <div class="burger"></div>
-                        <div class="burger"></div>
+                        <span> class="burger"></span>
+                        <span class="burger"></span>
+                        <span class="burger"></span>
                     </label>
                     <input type="checkbox" id="menu"/>
                     <ul class="navigation">
@@ -37,10 +37,10 @@
         </div>
     </header>
     <main>
-        <article class="information" id="about">
+        <div class="information" id="about">
             <img src="img/face.jpg" alt="My photo">
             <p>Hello, my name is Roman, and I am front-end developer from Lviv, Ukraine.<br><br>Love music and coffee  </p>
-        </article>
+        </div>
         <article class="education" id="education">
             <h2>Education</h2>
             <ul>
@@ -102,7 +102,7 @@
         </article>
         <article class="write" id="write">
             <h2>Write Me</h2>
-            <div id="tnx">Thank you for message!</div>
+            <div id="tnx" class="tnx">Thank you for message!</div>
             <form method="POST" action="https://tranquil-sierra-86540.herokuapp.com/roman28krasko@gmail.com">
                 <input type="text" name="name" placeholder="Enter Your Name" id="userName">
                 <input type="text" name="email" placeholder="Enter Your E-Mail" id="email">
@@ -114,10 +114,10 @@
     <footer>
         <p>2018 by Rikichikinkato</p>
     </footer>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/index.js"></script>
+    <script src="js/index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </body>
 </html>

@@ -1,10 +1,38 @@
 $('#submit').click( e => {
-    $('#tnx').show().animate({ 
+    $('#tnx').animate({ 
         opacity: 1
     },2000);
-    $('#tnx').show().animate({ 
+    $('#tnx').animate({ 
         opacity: 0
     },2000);
+});
+
+$('form').on('submit', e => {
+    e.preventDefault();
+    const userName = $('input[name="name"]').val();
+    const userEmail = $('input[name="email"]').val();
+    const userMsg = $('textarea').val();
+    
+    if(userName === undefined && userEmail === undefined && userMsg === undefined){
+        $('#tnx').addClass('empty');
+        $('#tnx').removeClass('tnx');
+        $('#tnx').html('Fields can\'t be empty');
+        return;
+    }
+    
+    $.ajax({
+        url: 'https://tranquil-sierra-86540.herokuapp.com/roman28krasko@gmail.com',
+        method: 'POST',
+        data: {
+            name: userName,
+            email: userEmail,
+            msg: userMsg
+        },
+        dataType: 'json'
+    });
+    $('input[name="name"]').val('');
+    $('input[name="email"]').val('');
+    $('textarea').val('');
 });
 
 $(function() {

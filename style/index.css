@@ -329,7 +329,7 @@ footer p{
     text-align: right;
 }
 
-#tnx{
+.tnx{
     width: 180px;
     height: 20px;
     border: 1px solid green;
