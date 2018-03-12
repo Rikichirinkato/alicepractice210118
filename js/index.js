@@ -13,11 +13,15 @@ $('form').on('submit', e => {
     const userEmail = $('input[name="email"]').val();
     const userMsg = $('textarea').val();
     
-    if(userName === undefined && userEmail === undefined && userMsg === undefined){
+    if(userName === '' && userEmail === '' && userMsg === ''){
         $('#tnx').addClass('empty');
         $('#tnx').removeClass('tnx');
         $('#tnx').html('Fields can\'t be empty');
         return;
+    } else {
+        $('#tnx').removeClass('empty');
+        $('#tnx').addClass('tnx');
+        $('#tnx').html('Thank you for message!');
     }
     
     $.ajax({
