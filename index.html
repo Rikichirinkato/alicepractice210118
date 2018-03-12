@@ -10,28 +10,31 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="nav">
-                <label class="menu-btn" for="menu">
-                    <div class="burger"></div>
-                    <div class="burger"></div>
-                    <div class="burger"></div>
-                </label>
-                <input type="checkbox" id="menu"/>
-                <ul class="navigation">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#skills">Skills and Tools</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
-                    <li><a href="#write">Write Me</a></li>
-                </ul>
-            </div>
-        </nav>
-        <section class="greeting" id="home">
-            <h1>Roman Krasko</h1>
-            <p>Front-end developer</p>
-        </section>
+        <div id="home"></div>
+        <div class="opacity">
+            <nav>
+                <div class="nav">
+                    <label class="menu-btn" for="menu">
+                        <div class="burger"></div>
+                        <div class="burger"></div>
+                        <div class="burger"></div>
+                    </label>
+                    <input type="checkbox" id="menu"/>
+                    <ul class="navigation">
+                        <li><a href="#home" class="smooth">Home</a></li>
+                        <li><a href="#about" class="smooth">About Me</a></li>
+                        <li><a href="#education" class="smooth">Education</a></li>
+                        <li><a href="#skills" class="smooth">Skills and Tools</a></li>
+                        <li><a href="#contacts" class="smooth">Contacts</a></li>
+                        <li><a href="#write" class="smooth">Write Me</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <section class="greeting">
+                <h1>Roman Krasko</h1>
+                <p>Front-end developer</p>
+            </section>
+        </div>
     </header>
     <main>
         <article class="information" id="about">
@@ -56,23 +59,23 @@
                         <div class="html"><div class="skill-item">HTML</div></div>
                         <div class="css"><div class="skill-item">CSS</div></div>
                         <div class="js"><div class="skill-item">JavaScript</div></div>
-                        <div class="es"><div class="skill-item">EcmaScript16</div></div>
+                        <div class="es"><div class="skill-item">EcmaScript6</div></div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="inside">
                         <div class="bt"><div class="skill-item">Bootstrap</div></div>
-                        <div class="ph"><div class="skill-item">Photoshop</div></div>
-                        <div class="git"><div class="skill-item">Git</div></div>
                         <div class="jq"><div class="skill-item">Jquery</div></div>
+                        <div class="ajax"><div class="skill-item">Ajax</div></div>
+                        <div class="ph"><div class="skill-item">Photoshop</div></div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="inside">
                         <div class="react"><div class="skill-item">React</div></div>
                         <div class="redux"><div class="skill-item">Redux</div></div>
-                        <div class="react"><div class="skill-item">React</div></div>
-                        <div class="redux"><div class="skill-item">Redux</div></div>
+                        <div class="react"><div class="skill-item">React Native</div></div>
+                        <div class="git"><div class="skill-item">Git</div></div>
                     </div>
                 </div>
               </div>
@@ -111,7 +114,7 @@
     <footer>
         <p>2018 by Rikichikinkato</p>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/index.js"></script>
